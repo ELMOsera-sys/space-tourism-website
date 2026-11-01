@@ -20,8 +20,7 @@ function Layout() {
       data-bg={getBg(pathname)}
       className="text-white p-4
   w-dvw h-full
-  bg-page-mobile md:bg-page-tablet lg:bg-page-desktop
-  bg-no-repeat bg-cover bg-center flex flex-col gap-6 
+   flex flex-col gap-6 
 "
     >
       <div className="flex justify-between items-center gap-5 w-full z-10 ">
