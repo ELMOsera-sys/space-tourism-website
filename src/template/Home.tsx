@@ -17,13 +17,13 @@ export default function Home(){
         "
         >
           <p
-            className="text-xl text-blue-300 lg:p-4
+            className="text-xl text-blue-300 lg:p-4 lg:text-2xl
           animate__animated  
           "
           >
             SO, YOU WANT TO TRAVEL TO
           </p>
-          <h1 className="text-8xl tracking-widest lg:p-8 ">SPACE</h1>
+          <h1 className="text-8xl tracking-widest lg:p-8 font-bold font-sans">SPACE</h1>
           <p className="text-blue-300 p-3 lg:text-left">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.

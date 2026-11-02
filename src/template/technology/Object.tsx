@@ -18,21 +18,22 @@ export default function Object() {
   return (
     <main
       className="flex flex-col max-sm:items-center gap-10 text-blue-300
-    lg:overflow-hidden"
+    "
     >
       <h3 className="text-white md:text-xl md:self-start">
         <span className="text-blue-300 mr-5">03</span> SPACE LAUNCH 101
       </h3>
       <div
         className="flex flex-col max-sm:items-center gap-10
-      md:w-[80%] md:mx-auto lg:mt-10 lg:flex-row "
+      md:w-[80%] md:mx-auto lg:mt-10 lg:flex-row lg:w-full lg:pl-10 "
       >
         <div
           key={current.name}
           className="flex flex-col gap-5 items-center lg:flex-row-reverse   "
         >
           <picture
-            className="w-dvw h-80 overflow-hidden flex 
+            className="w-dvw h-80 overflow-hidden flex  
+            lg:w-[60%] lg:h-[80vh] lg:justify-end
           animate__animated animate__zoomInDown"
           >
             <source
@@ -43,10 +44,11 @@ export default function Object() {
             <img
               src={`/assets/technology/image-${object}-portrait.jpg`}
               alt={current.name}
-              className="w-full lg:w-[70%]  "
+              className="w-full "
             />
           </picture>
-          <div key={object}
+          <div
+            key={object}
             className="flex flex-col gap-5 items-center lg:w-1/2
           lg:flex-row animate__animated animate__slideInLeft"
           >

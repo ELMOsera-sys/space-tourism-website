@@ -1,6 +1,6 @@
 
 import { NavLink, Outlet, useLocation } from "react-router";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const getBg = (pathname: string) => {
   if (pathname.includes("destination")) return "destination";
@@ -15,12 +15,14 @@ function Layout() {
 
   const { pathname } = useLocation();
 
+  useEffect(() => {
+  document.body.dataset.bg = getBg(pathname);
+}, [pathname]);
+
   return (
     <div
-      data-bg={getBg(pathname)}
+      
       className="text-white p-4
-  w-dvw h-full bg-page-mobile md:bg-page-tablet lg:bg-page-desktop
-  bg-no-repeat bg-cover bg-center
    flex flex-col gap-6 
 "
     >
